@@ -2,6 +2,7 @@
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
 
@@ -12,20 +13,16 @@
 
     <meta
         name="description"
-        content="Portfolio of Kritima Shrestha, Python and Django Developer."
+        content="{% block meta_description %}Kritima Shrestha - Python and Django Developer portfolio.{% endblock %}"
     >
 
-    <title>
-        {% block title %}
-        Kritima Shrestha | Portfolio
-        {% endblock %}
-    </title>
+    <title>{% block title %}Kritima Shrestha | Python & Django Developer{% endblock %}</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <link
-        href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap"
         rel="stylesheet"
     >
 
@@ -35,43 +32,97 @@
     >
 </head>
 
+
 <body>
 
-    <header class="navbar">
+    <!-- navbar -->
+    <header class="navbar" id="navbar">
 
         <div class="nav-container">
 
+            <!-- left side -->
             <a
-                href="{% url 'main:home' %}"
+                href="{% url 'home' %}"
                 class="brand"
             >
+
                 <div class="brand-logo">
+
                     <img
-                        src="{% static 'images/kritima.jpg' %}"
+                        src="{% static 'images/dp.jpg' %}"
                         alt="Kritima Shrestha"
                         class="brand-profile-image"
                     >
+
                 </div>
 
-                <span class="brand-name">
-                    Kritima Shrestha
-                </span>
+                <div class="brand-text">
+
+                    <span class="brand-name">
+                        Kritima Shrestha
+                    </span>
+
+                </div>
+
             </a>
 
 
-            <nav
-                class="nav-links"
-                id="navLinks"
-            >
-                <a href="#home">Home</a>
-                <a href="#about">About</a>
-                <a href="#skills">Skills</a>
-                <a href="#projects">Projects</a>
-                <a href="#blog">Blog</a>
-                <a href="#contact">Contact</a>
+            <!-- navigation -->
+            <nav class="nav-links" id="navLinks">
+
+                <a
+                    href="{% url 'home' %}"
+                    class="nav-link"
+                >
+                    Home
+                </a>
+
+                <a
+                    href="{% url 'about' %}"
+                    class="nav-link"
+                >
+                    About
+                </a>
+
+                <a
+                    href="{% url 'home' %}#skills"
+                    class="nav-link"
+                >
+                    Skills
+                </a>
+
+                <a
+                    href="{% url 'home' %}#projects"
+                    class="nav-link"
+                >
+                    Projects
+                </a>
+
+                <a
+                    href="{% url 'home' %}#experience"
+                    class="nav-link"
+                >
+                    Experience
+                </a>
+
+                <a
+                    href="{% url 'home' %}#blog"
+                    class="nav-link"
+                >
+                    Blog
+                </a>
+
+                <a
+                    href="{% url 'home' %}#contact"
+                    class="nav-link"
+                >
+                    Contact
+                </a>
+
             </nav>
 
 
+            <!-- right side -->
             <div class="nav-actions">
 
                 <button
@@ -80,21 +131,25 @@
                     type="button"
                     aria-label="Toggle dark mode"
                 >
-                    ☾
+                    <span class="theme-icon">
+                        ☾
+                    </span>
                 </button>
 
+
                 <a
-                    href="#contact"
-                    class="contact-button"
+                    href="{% url 'home' %}#contact"
+                    class="nav-contact-button"
                 >
                     Get in touch
                 </a>
+
 
                 <button
                     class="menu-toggle"
                     id="menuToggle"
                     type="button"
-                    aria-label="Open navigation"
+                    aria-label="Open navigation menu"
                     aria-expanded="false"
                 >
                     <span></span>
@@ -109,11 +164,16 @@
     </header>
 
 
-    {% block content %}
-    {% endblock %}
+    <!-- page content -->
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
 
 
+   
     <script src="{% static 'js/main.js' %}"></script>
 
 </body>
+
 </html>
