@@ -3907,3 +3907,1316 @@ button {
         scroll-behavior: auto !important;
     }
 }
+
+/* skills page */
+
+.skills-ecosystem-page {
+    --skills-blue: #2563eb;
+    --skills-blue-dark: #1d4ed8;
+    --skills-blue-soft: #eff6ff;
+    --skills-green: #238636;
+    --skills-green-soft: #effbf3;
+    --skills-purple: #7c3aed;
+    --skills-purple-soft: #f5f3ff;
+    --skills-orange: #ea580c;
+    --skills-yellow: #f4b400;
+    --skills-text: #172033;
+    --skills-muted: #667085;
+    --skills-border: #dce6f2;
+    --skills-card: rgba(255, 255, 255, 0.9);
+
+    color: var(--skills-text);
+    overflow: hidden;
+
+    background-color: #f9fcff;
+    background-image:
+        linear-gradient(rgba(37, 99, 235, 0.035) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(37, 99, 235, 0.035) 1px, transparent 1px);
+    background-size: 28px 28px;
+}
+
+.ecosystem-container {
+    width: min(1180px, calc(100% - 48px));
+    margin: 0 auto;
+}
+
+
+/* hero */
+
+.ecosystem-hero {
+    position: relative;
+    padding: 105px 0 95px;
+}
+
+.ecosystem-hero::before {
+    content: "";
+    position: absolute;
+    width: 430px;
+    height: 430px;
+    top: -150px;
+    right: -100px;
+    border-radius: 50%;
+    background: rgba(37, 99, 235, 0.06);
+    filter: blur(20px);
+    pointer-events: none;
+}
+
+.ecosystem-hero-grid {
+    position: relative;
+    z-index: 1;
+
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    align-items: center;
+    gap: 90px;
+}
+
+.ecosystem-eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+
+    margin: 0 0 20px;
+
+    font-family: "JetBrains Mono", monospace;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    color: var(--skills-blue);
+}
+
+.ecosystem-eyebrow::before {
+    content: "";
+    width: 28px;
+    height: 2px;
+    border-radius: 10px;
+    background: var(--skills-blue);
+}
+
+.ecosystem-hero-copy h1 {
+    margin: 0;
+
+    font-size: clamp(54px, 6vw, 86px);
+    line-height: 0.98;
+    letter-spacing: -0.055em;
+    font-weight: 700;
+    color: #172033;
+}
+
+.ecosystem-hero-copy h1 span {
+    display: block;
+    color: var(--skills-blue);
+}
+
+.ecosystem-intro {
+    max-width: 570px;
+    margin: 28px 0 0;
+
+    font-size: 18px;
+    line-height: 1.8;
+    color: var(--skills-muted);
+}
+
+.ecosystem-mini-note {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 11px;
+
+    width: fit-content;
+    margin-top: 30px;
+    padding: 11px 16px;
+
+    border: 1px solid #cfe0f5;
+    border-radius: 12px;
+
+    background: rgba(255, 255, 255, 0.78);
+
+    font-family: "JetBrains Mono", monospace;
+    font-size: 13px;
+    font-weight: 500;
+    color: #475467;
+}
+
+.ecosystem-mini-note span:nth-child(2),
+.ecosystem-mini-note span:nth-child(4) {
+    color: var(--skills-green);
+}
+
+
+/* ecosystem drawing */
+
+.ecosystem-map {
+    position: relative;
+
+    min-height: 490px;
+    padding: 45px;
+
+    border: 1px solid #d9e6f5;
+    border-radius: 32px;
+
+    background:
+        linear-gradient(rgba(37, 99, 235, 0.035) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(37, 99, 235, 0.035) 1px, transparent 1px),
+        rgba(255, 255, 255, 0.86);
+
+    background-size: 22px 22px;
+
+    box-shadow:
+        0 30px 80px rgba(38, 75, 120, 0.1),
+        inset 0 1px 0 rgba(255, 255, 255, 0.8);
+
+    transform: rotate(0.5deg);
+}
+
+.ecosystem-python {
+    position: relative;
+    z-index: 3;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 120px;
+    height: 120px;
+    margin: 0 auto 70px;
+
+    border: 3px solid var(--skills-blue);
+    border-radius: 50%;
+
+    background: #fff;
+
+    font-family: "JetBrains Mono", monospace;
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--skills-blue);
+
+    box-shadow: 8px 9px 0 rgba(37, 99, 235, 0.1);
+}
+
+.ecosystem-python::after {
+    content: "main language";
+
+    position: absolute;
+    top: -23px;
+    right: -67px;
+
+    font-family: "JetBrains Mono", monospace;
+    font-size: 10px;
+    font-weight: 500;
+    color: #667085;
+
+    transform: rotate(7deg);
+}
+
+.ecosystem-frameworks {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 90px;
+
+    position: relative;
+    z-index: 2;
+}
+
+.ecosystem-node {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 105px;
+    padding: 18px;
+
+    border: 2px solid;
+    border-radius: 18px;
+
+    background: #fff;
+
+    text-align: center;
+
+    box-shadow: 6px 7px 0 rgba(30, 41, 59, 0.06);
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.ecosystem-node:hover {
+    transform: translateY(-5px) rotate(-1deg);
+    box-shadow: 8px 11px 0 rgba(30, 41, 59, 0.07);
+}
+
+.ecosystem-node strong {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.ecosystem-node span {
+    font-size: 13px;
+    color: var(--skills-muted);
+}
+
+.django-node {
+    border-color: var(--skills-green);
+}
+
+.django-node strong {
+    color: var(--skills-green);
+}
+
+.fastapi-node {
+    border-color: var(--skills-purple);
+}
+
+.fastapi-node strong {
+    color: var(--skills-purple);
+}
+
+.database-node {
+    width: 230px;
+    min-height: 90px;
+    margin: 42px auto 0;
+
+    border-color: var(--skills-orange);
+}
+
+.database-node strong {
+    color: var(--skills-orange);
+}
+
+.ecosystem-down-arrow {
+    position: absolute;
+    left: 50%;
+    bottom: 135px;
+
+    font-family: "JetBrains Mono", monospace;
+    font-size: 27px;
+    color: #98a2b3;
+
+    transform: translateX(-50%);
+}
+
+.ecosystem-connector {
+    position: absolute;
+    z-index: 1;
+
+    top: 155px;
+    width: 140px;
+    height: 85px;
+
+    border-bottom: 2px dashed #aabbd0;
+}
+
+.ecosystem-line-left {
+    left: 24%;
+    border-left: 2px dashed #aabbd0;
+    transform: rotate(12deg);
+}
+
+.ecosystem-line-right {
+    right: 24%;
+    border-right: 2px dashed #aabbd0;
+    transform: rotate(-12deg);
+}
+
+.ecosystem-side-note {
+    position: absolute;
+    right: 20px;
+    bottom: 32px;
+
+    font-family: "JetBrains Mono", monospace;
+    font-size: 10px;
+    line-height: 1.7;
+    color: #8391a4;
+
+    transform: rotate(-5deg);
+}
+
+.ecosystem-hand-note {
+    position: absolute;
+    left: 22px;
+    bottom: 30px;
+
+    font-family: "JetBrains Mono", monospace;
+    font-size: 11px;
+    line-height: 1.65;
+    color: var(--skills-green);
+
+    transform: rotate(5deg);
+}
+
+
+/* section */
+
+.ecosystem-section {
+    padding: 95px 0;
+    border-top: 1px solid rgba(214, 226, 240, 0.75);
+}
+
+.ecosystem-section-heading {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: end;
+    gap: 60px;
+
+    margin-bottom: 45px;
+}
+
+.ecosystem-section-heading > div:first-child {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.ecosystem-section-heading span {
+    font-family: "JetBrains Mono", monospace;
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--skills-blue);
+}
+
+.ecosystem-section-heading h2 {
+    margin: 0;
+
+    font-size: 29px;
+    letter-spacing: -0.035em;
+    color: var(--skills-text);
+}
+
+.ecosystem-section-heading > p {
+    max-width: 520px;
+    margin: 0;
+
+    font-size: 16px;
+    line-height: 1.75;
+    color: var(--skills-muted);
+}
+
+
+/* stack map */
+
+.stack-map {
+    display: grid;
+    grid-template-columns: 1fr 48px 1.15fr 48px 1fr;
+    align-items: center;
+    gap: 14px;
+}
+
+.stack-map-card {
+    min-height: 240px;
+    padding: 27px;
+
+    border: 1px solid var(--skills-border);
+    border-radius: 22px;
+
+    background: var(--skills-card);
+
+    box-shadow: 0 15px 40px rgba(42, 72, 110, 0.065);
+
+    transition:
+        transform 0.25s ease,
+        border-color 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.stack-map-card:hover {
+    transform: translateY(-5px);
+    border-color: #b9d3f1;
+    box-shadow: 0 22px 48px rgba(42, 72, 110, 0.1);
+}
+
+.stack-map-label {
+    display: inline-block;
+
+    padding: 6px 10px;
+
+    border-radius: 7px;
+
+    background: var(--skills-blue-soft);
+
+    font-family: "JetBrains Mono", monospace;
+    font-size: 11px !important;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--skills-blue) !important;
+}
+
+.stack-icons {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 26px;
+
+    margin: 33px 0 28px;
+}
+
+.stack-icons > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.stack-icons small {
+    font-size: 12px;
+    color: var(--skills-muted);
+}
+
+.stack-symbol {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 52px;
+    height: 52px;
+
+    border-radius: 14px;
+
+    font-family: "JetBrains Mono", monospace;
+    font-size: 15px !important;
+    font-weight: 700;
+}
+
+.html-symbol {
+    background: #fff0eb;
+    color: #e34f26 !important;
+}
+
+.css-symbol {
+    background: #eef5ff;
+    color: #1572b6 !important;
+}
+
+.js-symbol {
+    background: #fff9dd;
+    color: #a87e00 !important;
+}
+
+.python-symbol {
+    background: #edf6ff;
+    color: #3776ab !important;
+}
+
+.django-symbol {
+    background: #eaf8f1;
+    color: #0c4b33 !important;
+}
+
+.api-symbol {
+    background: #eafff8;
+    color: #059669 !important;
+}
+
+.sqlite-symbol {
+    background: #edf8ff;
+    color: #2563eb !important;
+}
+
+.postgres-symbol {
+    background: #eef4ff;
+    color: #336791 !important;
+}
+
+.stack-map-card > p {
+    margin: 0;
+    text-align: center;
+
+    font-family: "JetBrains Mono", monospace;
+    font-size: 12px;
+    color: #7c899b;
+}
+
+.backend-map {
+    border-color: #b9ddc4;
+    background: linear-gradient(145deg, #ffffff, #f5fff7);
+}
+
+.stack-arrow {
+    text-align: center;
+
+    font-family: "JetBrains Mono", monospace;
+    font-size: 27px;
+    color: #91a4ba;
+}
+
+
+/* tools */
+
+.tools-map {
+    display: grid;
+    grid-template-columns: 170px 1fr;
+    gap: 24px;
+    align-items: center;
+
+    margin-top: 22px;
+    padding: 22px 25px;
+
+    border: 1px dashed #c9d8e8;
+    border-radius: 18px;
+
+    background: rgba(255, 255, 255, 0.58);
+}
+
+.tools-map-title {
+    font-size: 14px !important;
+    font-weight: 700 !important;
+    color: var(--skills-text) !important;
+}
+
+.tools-map-list {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 12px;
+}
+
+.tools-map-list > div {
+    padding: 10px 13px;
+
+    border: 1px solid #e0e8f1;
+    border-radius: 10px;
+
+    background: #fff;
+}
+
+.tools-map-list span {
+    display: block;
+
+    margin-bottom: 3px;
+
+    font-family: "DM Sans", sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    color: #344054;
+}
+
+.tools-map-list small {
+    font-size: 10px;
+    color: #98a2b3;
+}
+
+
+/* detailed skills */
+
+.ecosystem-details-section {
+    background: rgba(244, 249, 255, 0.7);
+}
+
+.ecosystem-heading-row {
+    align-items: center;
+}
+
+.ecosystem-heading-row > div:first-child {
+    display: block;
+}
+
+.ecosystem-heading-title {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+
+    margin-bottom: 12px;
+}
+
+.ecosystem-heading-row > div:first-child > p {
+    max-width: 540px;
+    margin: 0;
+
+    font-size: 15px;
+    line-height: 1.7;
+    color: var(--skills-muted);
+}
+
+.skills-filter {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    gap: 7px;
+}
+
+.skills-filter span {
+    padding: 7px 12px;
+
+    border: 1px solid #dce5ef;
+    border-radius: 8px;
+
+    background: #fff;
+
+    font-family: "DM Sans", sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    color: #667085;
+
+    cursor: default;
+}
+
+.skills-filter span.active {
+    border-color: var(--skills-blue);
+    background: var(--skills-blue);
+    color: #fff;
+}
+
+.detailed-skills-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+}
+
+.detail-skill-card {
+    position: relative;
+
+    min-height: 265px;
+    padding: 24px;
+
+    border: 1px solid var(--skills-border);
+    border-radius: 19px;
+
+    background: rgba(255, 255, 255, 0.92);
+
+    box-shadow: 0 12px 32px rgba(42, 72, 110, 0.055);
+
+    transition:
+        transform 0.25s ease,
+        border-color 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.detail-skill-card:hover {
+    transform: translateY(-5px);
+    border-color: #b7cfea;
+    box-shadow: 0 20px 42px rgba(42, 72, 110, 0.1);
+}
+
+.detail-skill-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+
+    margin-bottom: 23px;
+}
+
+.detail-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 48px;
+    height: 48px;
+
+    border-radius: 13px;
+
+    font-family: "JetBrains Mono", monospace;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.python-detail {
+    background: #eaf4ff;
+    color: #3776ab;
+}
+
+.django-detail {
+    background: #eaf8f0;
+    color: #0c4b33;
+}
+
+.fastapi-detail {
+    background: #eafff8;
+    color: #059669;
+}
+
+.rest-detail {
+    background: #eef2ff;
+    color: #4f46e5;
+}
+
+.sql-detail {
+    background: #fff3e8;
+    color: #c2410c;
+}
+
+.postgres-detail {
+    background: #edf3ff;
+    color: #336791;
+}
+
+.git-detail {
+    background: #fff0eb;
+    color: #f05032;
+}
+
+.docker-detail {
+    background: #eaf7ff;
+    color: #2496ed;
+}
+
+.auth-detail {
+    background: #f4efff;
+    color: #7c3aed;
+}
+
+.skill-level {
+    padding: 5px 8px;
+
+    border-radius: 6px;
+
+    font-family: "JetBrains Mono", monospace;
+    font-size: 9px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+}
+
+.level-primary {
+    background: #edf4ff;
+    color: var(--skills-blue);
+}
+
+.level-project {
+    background: var(--skills-green-soft);
+    color: var(--skills-green);
+}
+
+.level-working {
+    background: var(--skills-purple-soft);
+    color: var(--skills-purple);
+}
+
+.level-learning {
+    background: #fff7e8;
+    color: #b45309;
+}
+
+.detail-skill-card h3 {
+    margin: 0 0 10px;
+
+    font-size: 19px;
+    letter-spacing: -0.02em;
+    color: var(--skills-text);
+}
+
+.detail-skill-card p {
+    margin: 0;
+    padding-right: 10px;
+
+    font-size: 14px;
+    line-height: 1.7;
+    color: var(--skills-muted);
+}
+
+.detail-card-arrow {
+    position: absolute;
+    right: 21px;
+    bottom: 18px;
+
+    font-size: 19px;
+    color: #a1aec0;
+
+    transition:
+        transform 0.2s ease,
+        color 0.2s ease;
+}
+
+.detail-skill-card:hover .detail-card-arrow {
+    transform: translateX(4px);
+    color: var(--skills-blue);
+}
+
+
+/* learning journey */
+
+.learning-journey-section {
+    background: #fff;
+}
+
+.learning-roadmap {
+    position: relative;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+
+    padding-top: 30px;
+}
+
+.roadmap-line {
+    position: absolute;
+    top: 48px;
+    left: 10%;
+    right: 10%;
+
+    height: 2px;
+
+    background: linear-gradient(
+        90deg,
+        var(--skills-blue),
+        var(--skills-green),
+        #b9c5d4
+    );
+}
+
+.roadmap-item {
+    position: relative;
+    z-index: 1;
+
+    padding: 0 15px;
+
+    text-align: center;
+}
+
+.roadmap-dot {
+    width: 18px;
+    height: 18px;
+    margin: 10px auto 25px;
+
+    border: 4px solid #fff;
+    border-radius: 50%;
+
+    background: #aab7c6;
+
+    box-shadow: 0 0 0 2px #aab7c6;
+}
+
+.roadmap-current .roadmap-dot {
+    background: var(--skills-blue);
+    box-shadow: 0 0 0 2px var(--skills-blue);
+}
+
+.roadmap-next .roadmap-dot {
+    background: var(--skills-green);
+    box-shadow: 0 0 0 2px var(--skills-green);
+}
+
+.roadmap-time {
+    display: inline-block;
+
+    margin-bottom: 9px;
+
+    font-family: "JetBrains Mono", monospace;
+    font-size: 10px !important;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--skills-blue) !important;
+}
+
+.roadmap-item h3 {
+    margin: 0 0 7px;
+
+    font-size: 16px;
+    color: var(--skills-text);
+}
+
+.roadmap-item p {
+    max-width: 180px;
+    margin: 0 auto;
+
+    font-size: 13px;
+    line-height: 1.6;
+    color: var(--skills-muted);
+}
+
+
+/* cta */
+
+.ecosystem-cta-section {
+    padding: 30px 0 100px;
+}
+
+.ecosystem-cta {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    gap: 25px;
+
+    padding: 34px 38px;
+
+    border: 1px solid #b9d8c2;
+    border-radius: 22px;
+
+    background:
+        linear-gradient(120deg, #f2fff5, #f5f9ff);
+
+    box-shadow: 0 18px 45px rgba(45, 120, 70, 0.07);
+}
+
+.ecosystem-cta-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 56px;
+    height: 56px;
+
+    border-radius: 15px;
+
+    background: #fff;
+
+    font-size: 25px;
+    color: var(--skills-green);
+
+    box-shadow: 0 8px 20px rgba(40, 90, 60, 0.08);
+}
+
+.ecosystem-cta-copy h2 {
+    margin: 0 0 6px;
+
+    font-size: 25px;
+    letter-spacing: -0.035em;
+    color: var(--skills-text);
+}
+
+.ecosystem-cta-copy p {
+    max-width: 660px;
+    margin: 0;
+
+    font-size: 14px;
+    line-height: 1.65;
+    color: var(--skills-muted);
+}
+
+.ecosystem-cta-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+
+    padding: 13px 18px;
+
+    border-radius: 10px;
+
+    background: var(--skills-green);
+    color: #fff;
+
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+
+    box-shadow: 0 8px 20px rgba(35, 134, 54, 0.18);
+
+    transition:
+        transform 0.2s ease,
+        background 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.ecosystem-cta-button:hover {
+    transform: translateY(-2px);
+    background: #1f7630;
+    box-shadow: 0 12px 25px rgba(35, 134, 54, 0.23);
+}
+
+.ecosystem-cta-button span {
+    transition: transform 0.2s ease;
+}
+
+.ecosystem-cta-button:hover span {
+    transform: translate(2px, -2px);
+}
+
+
+/* skills dark mode */
+
+body.dark-mode .skills-ecosystem-page {
+    --skills-text: #e7edf5;
+    --skills-muted: #9caabd;
+    --skills-border: #29384a;
+    --skills-card: rgba(18, 27, 39, 0.94);
+
+    background-color: #0d131c;
+
+    background-image:
+        linear-gradient(rgba(88, 166, 255, 0.04) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(88, 166, 255, 0.04) 1px, transparent 1px);
+}
+
+body.dark-mode .ecosystem-hero-copy h1,
+body.dark-mode .ecosystem-section-heading h2,
+body.dark-mode .detail-skill-card h3,
+body.dark-mode .roadmap-item h3,
+body.dark-mode .ecosystem-cta-copy h2 {
+    color: #eef4fb;
+}
+
+body.dark-mode .ecosystem-map,
+body.dark-mode .stack-map-card,
+body.dark-mode .detail-skill-card,
+body.dark-mode .tools-map {
+    background-color: rgba(17, 25, 36, 0.92);
+    border-color: #29384a;
+}
+
+body.dark-mode .ecosystem-python,
+body.dark-mode .ecosystem-node,
+body.dark-mode .tools-map-list > div {
+    background: #111b27;
+}
+
+body.dark-mode .ecosystem-mini-note {
+    background: rgba(17, 27, 39, 0.9);
+    border-color: #2a3b50;
+    color: #a9b6c7;
+}
+
+body.dark-mode .ecosystem-details-section {
+    background: rgba(11, 18, 27, 0.7);
+}
+
+body.dark-mode .learning-journey-section {
+    background: #0d131c;
+}
+
+body.dark-mode .ecosystem-cta {
+    border-color: #285038;
+
+    background:
+        linear-gradient(
+            120deg,
+            rgba(25, 62, 38, 0.5),
+            rgba(18, 31, 48, 0.7)
+        );
+}
+
+
+/* tablet */
+
+@media (max-width: 1050px) {
+
+    .ecosystem-hero-grid {
+        grid-template-columns: 1fr;
+        gap: 60px;
+    }
+
+    .ecosystem-hero-copy {
+        max-width: 760px;
+    }
+
+    .ecosystem-map {
+        max-width: 720px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .stack-map {
+        grid-template-columns: 1fr;
+        gap: 14px;
+    }
+
+    .stack-arrow {
+        transform: rotate(90deg);
+    }
+
+    .stack-map-card {
+        min-height: auto;
+    }
+
+    .tools-map {
+        grid-template-columns: 1fr;
+    }
+
+    .tools-map-list {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .detailed-skills-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+/* mobile */
+
+@media (max-width: 720px) {
+
+    .ecosystem-container {
+        width: min(100% - 30px, 1180px);
+    }
+
+    .ecosystem-hero {
+        padding: 70px 0 65px;
+    }
+
+    .ecosystem-hero-copy h1 {
+        font-size: clamp(46px, 14vw, 65px);
+    }
+
+    .ecosystem-intro {
+        font-size: 16px;
+    }
+
+    .ecosystem-map {
+        min-height: 570px;
+        padding: 35px 22px;
+        border-radius: 24px;
+    }
+
+    .ecosystem-python {
+        width: 105px;
+        height: 105px;
+        margin-bottom: 55px;
+        font-size: 17px;
+    }
+
+    .ecosystem-frameworks {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .ecosystem-node {
+        min-height: 90px;
+    }
+
+    .database-node {
+        width: 100%;
+        margin-top: 45px;
+    }
+
+    .ecosystem-connector {
+        display: none;
+    }
+
+    .ecosystem-down-arrow {
+        bottom: 120px;
+    }
+
+    .ecosystem-side-note,
+    .ecosystem-hand-note {
+        display: none;
+    }
+
+    .ecosystem-section {
+        padding: 70px 0;
+    }
+
+    .ecosystem-section-heading {
+        grid-template-columns: 1fr;
+        gap: 14px;
+        margin-bottom: 30px;
+    }
+
+    .ecosystem-section-heading > p {
+        font-size: 14px;
+    }
+
+    .stack-icons {
+        gap: 18px;
+    }
+
+    .tools-map-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .ecosystem-heading-row {
+        display: block;
+    }
+
+    .skills-filter {
+        justify-content: flex-start;
+        margin-top: 25px;
+    }
+
+    .detailed-skills-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .detail-skill-card {
+        min-height: 240px;
+    }
+
+    .learning-roadmap {
+        display: block;
+        padding: 0 0 0 30px;
+    }
+
+    .roadmap-line {
+        top: 10px;
+        bottom: 10px;
+        left: 8px;
+        right: auto;
+
+        width: 2px;
+        height: auto;
+
+        background: linear-gradient(
+            var(--skills-blue),
+            var(--skills-green),
+            #b9c5d4
+        );
+    }
+
+    .roadmap-item {
+        position: relative;
+
+        margin-bottom: 38px;
+        padding: 0;
+
+        text-align: left;
+    }
+
+    .roadmap-dot {
+        position: absolute;
+        top: 2px;
+        left: -30px;
+
+        margin: 0;
+    }
+
+    .roadmap-item p {
+        margin: 0;
+    }
+
+    .ecosystem-cta {
+        grid-template-columns: 1fr;
+        padding: 28px;
+    }
+
+    .ecosystem-cta-button {
+        width: fit-content;
+    }
+
+}
+
+
+/* small mobile */
+
+@media (max-width: 450px) {
+
+    .ecosystem-mini-note {
+        gap: 7px;
+        padding: 9px 11px;
+        font-size: 11px;
+    }
+
+    .ecosystem-map {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .stack-map-card {
+        padding: 22px 18px;
+    }
+
+    .stack-icons {
+        gap: 11px;
+    }
+
+    .stack-symbol {
+        width: 46px;
+        height: 46px;
+        font-size: 13px !important;
+    }
+
+    .tools-map-list {
+        grid-template-columns: 1fr;
+    }
+
+    .detail-skill-top {
+        align-items: flex-start;
+    }
+
+    .skill-level {
+        max-width: 130px;
+        text-align: center;
+    }
+
+}
