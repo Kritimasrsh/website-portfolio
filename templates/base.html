@@ -16,8 +16,11 @@
         content="{% block meta_description %}Kritima Shrestha - Python and Django Developer portfolio.{% endblock %}"
     >
 
-    <title>{% block title %}Kritima Shrestha | Python & Django Developer{% endblock %}</title>
+    <title>
+        {% block title %}Kritima Shrestha | Python & Django Developer{% endblock %}
+    </title>
 
+    <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
@@ -26,10 +29,13 @@
         rel="stylesheet"
     >
 
+    <!-- css -->
     <link
         rel="stylesheet"
         href="{% static 'css/style.css' %}"
     >
+
+    {% block extra_css %}{% endblock %}
 </head>
 
 
@@ -49,7 +55,7 @@
                 <div class="brand-logo">
 
                     <img
-                        src="{% static 'images/dp.jpg' %}"
+                        src="{% static 'images/kritima.jpg' %}"
                         alt="Kritima Shrestha"
                         class="brand-profile-image"
                     >
@@ -77,6 +83,7 @@
                     Home
                 </a>
 
+
                 <a
                     href="{% url 'about' %}"
                     class="nav-link"
@@ -84,12 +91,14 @@
                     About
                 </a>
 
+
                 <a
-                    href="{% url 'home' %}#skills"
+                    href="{% url 'skills' %}"
                     class="nav-link"
                 >
                     Skills
                 </a>
+
 
                 <a
                     href="{% url 'home' %}#projects"
@@ -98,6 +107,7 @@
                     Projects
                 </a>
 
+
                 <a
                     href="{% url 'home' %}#experience"
                     class="nav-link"
@@ -105,12 +115,14 @@
                     Experience
                 </a>
 
+
                 <a
                     href="{% url 'home' %}#blog"
                     class="nav-link"
                 >
                     Blog
                 </a>
+
 
                 <a
                     href="{% url 'home' %}#contact"
@@ -125,11 +137,13 @@
             <!-- right side -->
             <div class="nav-actions">
 
+                <!-- theme -->
                 <button
                     class="theme-toggle"
                     id="themeToggle"
                     type="button"
                     aria-label="Toggle dark mode"
+                    title="Toggle dark mode"
                 >
                     <span class="theme-icon">
                         ☾
@@ -137,6 +151,7 @@
                 </button>
 
 
+                <!-- contact -->
                 <a
                     href="{% url 'home' %}#contact"
                     class="nav-contact-button"
@@ -145,12 +160,14 @@
                 </a>
 
 
+                <!-- mobile menu -->
                 <button
                     class="menu-toggle"
                     id="menuToggle"
                     type="button"
                     aria-label="Open navigation menu"
                     aria-expanded="false"
+                    aria-controls="navLinks"
                 >
                     <span></span>
                     <span></span>
@@ -166,13 +183,17 @@
 
     <!-- page content -->
     <main>
+
         {% block content %}
         {% endblock %}
+
     </main>
 
 
-   
+    <!-- javascript -->
     <script src="{% static 'js/main.js' %}"></script>
+
+    {% block extra_js %}{% endblock %}
 
 </body>
 

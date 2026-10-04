@@ -1,0 +1,684 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Skills | Kritima Shrestha{% endblock %}
+
+{% block content %}
+
+<main class="skills-ecosystem-page">
+
+    <!-- hero -->
+    <section class="ecosystem-hero">
+        <div class="ecosystem-container ecosystem-hero-grid">
+
+            <div class="ecosystem-hero-copy">
+                <p class="ecosystem-eyebrow">MY SKILLS</p>
+
+                <h1>
+                    My Tech
+                    <span>Ecosystem.</span>
+                </h1>
+
+                <p class="ecosystem-intro">
+                    Technologies I use, how they connect, and what I'm
+                    learning next as I continue building web applications
+                    and backend systems.
+                </p>
+
+                <div class="ecosystem-mini-note">
+                    <span>Build projects</span>
+                    <span>→</span>
+                    <span>Learn</span>
+                    <span>→</span>
+                    <span>Improve</span>
+                </div>
+            </div>
+
+
+            <!-- hand-drawn ecosystem -->
+            <div class="ecosystem-map">
+
+                <div class="ecosystem-python">
+                    Python
+                </div>
+
+                <div class="ecosystem-connector ecosystem-line-left"></div>
+                <div class="ecosystem-connector ecosystem-line-right"></div>
+
+                <div class="ecosystem-frameworks">
+
+                    <div class="ecosystem-node django-node">
+                        <strong>Django</strong>
+                        <span>Web Apps</span>
+                    </div>
+
+                    <div class="ecosystem-node fastapi-node">
+                        <strong>FastAPI</strong>
+                        <span>REST APIs</span>
+                    </div>
+
+                </div>
+
+                <div class="ecosystem-down-arrow">↓</div>
+
+                <div class="ecosystem-node database-node">
+                    <strong>Database</strong>
+                    <span>SQLite | PostgreSQL</span>
+                </div>
+
+                <div class="ecosystem-side-note">
+                    APIs<br>
+                    Authentication<br>
+                    Database<br>
+                    Deployment
+                </div>
+
+                <div class="ecosystem-hand-note">
+                    Build<br>
+                    Projects<br>
+                    Learn<br>
+                    Repeat :)
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- skill map -->
+    <section class="ecosystem-section">
+        <div class="ecosystem-container">
+
+            <div class="ecosystem-section-heading">
+                <div>
+                    <span>01</span>
+                    <h2>SKILL MAP</h2>
+                </div>
+
+                <p>
+                    A visual overview of how the technologies I use
+                    connect together.
+                </p>
+            </div>
+
+
+            <div class="stack-map">
+
+                <!-- frontend -->
+                <article class="stack-map-card frontend-map">
+
+                    <span class="stack-map-label">
+                        Frontend
+                    </span>
+
+                    <div class="stack-icons">
+
+                        <div>
+                            <span class="stack-symbol html-symbol">
+                                5
+                            </span>
+                            <small>HTML</small>
+                        </div>
+
+                        <div>
+                            <span class="stack-symbol css-symbol">
+                                3
+                            </span>
+                            <small>CSS</small>
+                        </div>
+
+                        <div>
+                            <span class="stack-symbol js-symbol">
+                                JS
+                            </span>
+                            <small>JavaScript</small>
+                        </div>
+
+                    </div>
+
+                    <p>Django Templates</p>
+
+                </article>
+
+
+                <div class="stack-arrow">
+                    →
+                </div>
+
+
+                <!-- backend -->
+                <article class="stack-map-card backend-map">
+
+                    <span class="stack-map-label">
+                        Backend
+                    </span>
+
+                    <div class="stack-icons">
+
+                        <div>
+                            <span class="stack-symbol python-symbol">
+                                Py
+                            </span>
+                            <small>Python</small>
+                        </div>
+
+                        <div>
+                            <span class="stack-symbol django-symbol">
+                                dj
+                            </span>
+                            <small>Django</small>
+                        </div>
+
+                        <div>
+                            <span class="stack-symbol api-symbol">
+                                ⚡
+                            </span>
+                            <small>FastAPI</small>
+                        </div>
+
+                    </div>
+
+                    <p>Django REST Framework</p>
+
+                </article>
+
+
+                <div class="stack-arrow">
+                    →
+                </div>
+
+
+                <!-- database -->
+                <article class="stack-map-card database-map">
+
+                    <span class="stack-map-label">
+                        Database
+                    </span>
+
+                    <div class="stack-icons">
+
+                        <div>
+                            <span class="stack-symbol sqlite-symbol">
+                                DB
+                            </span>
+                            <small>SQLite</small>
+                        </div>
+
+                        <div>
+                            <span class="stack-symbol postgres-symbol">
+                                PG
+                            </span>
+                            <small>PostgreSQL</small>
+                        </div>
+
+                    </div>
+
+                    <p>Django ORM</p>
+
+                </article>
+
+            </div>
+
+
+            <!-- tools row -->
+            <div class="tools-map">
+
+                <span class="tools-map-title">
+                    Tools & DevOps
+                </span>
+
+                <div class="tools-map-list">
+
+                    <div>
+                        <span>Git</span>
+                        <small>Version Control</small>
+                    </div>
+
+                    <div>
+                        <span>GitHub</span>
+                        <small>Repositories</small>
+                    </div>
+
+                    <div>
+                        <span>VS Code</span>
+                        <small>Editor</small>
+                    </div>
+
+                    <div>
+                        <span>Postman</span>
+                        <small>API Testing</small>
+                    </div>
+
+                    <div>
+                        <span>Docker</span>
+                        <small>Learning</small>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- detailed skills -->
+    <section class="ecosystem-section ecosystem-details-section">
+        <div class="ecosystem-container">
+
+            <div class="ecosystem-section-heading ecosystem-heading-row">
+
+                <div>
+                    <div class="ecosystem-heading-title">
+                        <span>02</span>
+                        <h2>DETAILED SKILLS</h2>
+                    </div>
+
+                    <p>
+                        Technologies, tools and concepts that define
+                        my current development experience.
+                    </p>
+                </div>
+
+
+                <div class="skills-filter">
+                    <span class="active">All</span>
+                    <span>Backend</span>
+                    <span>Database</span>
+                    <span>Frontend</span>
+                    <span>Tools</span>
+                </div>
+
+            </div>
+
+
+            <div class="detailed-skills-grid">
+
+                <!-- python -->
+                <article class="detail-skill-card">
+
+                    <div class="detail-skill-top">
+
+                        <span class="detail-icon python-detail">
+                            Py
+                        </span>
+
+                        <span class="skill-level level-primary">
+                            Primary
+                        </span>
+
+                    </div>
+
+                    <h3>Python</h3>
+
+                    <p>
+                        Core programming language for backend development,
+                        application logic and data processing.
+                    </p>
+
+                    <div class="detail-card-arrow">→</div>
+
+                </article>
+
+
+                <!-- django -->
+                <article class="detail-skill-card">
+
+                    <div class="detail-skill-top">
+
+                        <span class="detail-icon django-detail">
+                            dj
+                        </span>
+
+                        <span class="skill-level level-project">
+                            Project Experience
+                        </span>
+
+                    </div>
+
+                    <h3>Django</h3>
+
+                    <p>
+                        Building web applications using models, views,
+                        templates, forms and authentication.
+                    </p>
+
+                    <div class="detail-card-arrow">→</div>
+
+                </article>
+
+
+                <!-- fastapi -->
+                <article class="detail-skill-card">
+
+                    <div class="detail-skill-top">
+
+                        <span class="detail-icon fastapi-detail">
+                            ⚡
+                        </span>
+
+                        <span class="skill-level level-project">
+                            Project Experience
+                        </span>
+
+                    </div>
+
+                    <h3>FastAPI</h3>
+
+                    <p>
+                        Building REST APIs with routing, Pydantic
+                        validation and database integration.
+                    </p>
+
+                    <div class="detail-card-arrow">→</div>
+
+                </article>
+
+
+                <!-- rest -->
+                <article class="detail-skill-card">
+
+                    <div class="detail-skill-top">
+
+                        <span class="detail-icon rest-detail">
+                            API
+                        </span>
+
+                        <span class="skill-level level-working">
+                            Working Knowledge
+                        </span>
+
+                    </div>
+
+                    <h3>REST APIs</h3>
+
+                    <p>
+                        Designing and working with API endpoints,
+                        request data and application responses.
+                    </p>
+
+                    <div class="detail-card-arrow">→</div>
+
+                </article>
+
+
+                <!-- sql -->
+                <article class="detail-skill-card">
+
+                    <div class="detail-skill-top">
+
+                        <span class="detail-icon sql-detail">
+                            DB
+                        </span>
+
+                        <span class="skill-level level-working">
+                            Working Knowledge
+                        </span>
+
+                    </div>
+
+                    <h3>SQL</h3>
+
+                    <p>
+                        Writing queries and working with relational
+                        data and database relationships.
+                    </p>
+
+                    <div class="detail-card-arrow">→</div>
+
+                </article>
+
+
+                <!-- postgres -->
+                <article class="detail-skill-card">
+
+                    <div class="detail-skill-top">
+
+                        <span class="detail-icon postgres-detail">
+                            PG
+                        </span>
+
+                        <span class="skill-level level-learning">
+                            Learning
+                        </span>
+
+                    </div>
+
+                    <h3>PostgreSQL</h3>
+
+                    <p>
+                        Currently improving my PostgreSQL knowledge
+                        for production database use.
+                    </p>
+
+                    <div class="detail-card-arrow">→</div>
+
+                </article>
+
+
+                <!-- git -->
+                <article class="detail-skill-card">
+
+                    <div class="detail-skill-top">
+
+                        <span class="detail-icon git-detail">
+                            Git
+                        </span>
+
+                        <span class="skill-level level-project">
+                            Project Experience
+                        </span>
+
+                    </div>
+
+                    <h3>Git & GitHub</h3>
+
+                    <p>
+                        Version control, repositories, commits and
+                        project management through GitHub.
+                    </p>
+
+                    <div class="detail-card-arrow">→</div>
+
+                </article>
+
+
+                <!-- docker -->
+                <article class="detail-skill-card">
+
+                    <div class="detail-skill-top">
+
+                        <span class="detail-icon docker-detail">
+                            DK
+                        </span>
+
+                        <span class="skill-level level-learning">
+                            Learning
+                        </span>
+
+                    </div>
+
+                    <h3>Docker</h3>
+
+                    <p>
+                        Learning containerization and how applications
+                        are prepared for deployment.
+                    </p>
+
+                    <div class="detail-card-arrow">→</div>
+
+                </article>
+
+
+                <!-- authentication -->
+                <article class="detail-skill-card">
+
+                    <div class="detail-skill-top">
+
+                        <span class="detail-icon auth-detail">
+                            🔒
+                        </span>
+
+                        <span class="skill-level level-project">
+                            Project Experience
+                        </span>
+
+                    </div>
+
+                    <h3>Authentication</h3>
+
+                    <p>
+                        User authentication, authorization and
+                        access-controlled application features.
+                    </p>
+
+                    <div class="detail-card-arrow">→</div>
+
+                </article>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- learning journey -->
+    <section class="ecosystem-section learning-journey-section">
+        <div class="ecosystem-container">
+
+            <div class="ecosystem-section-heading">
+
+                <div>
+                    <span>03</span>
+                    <h2>MY LEARNING JOURNEY</h2>
+                </div>
+
+                <p>
+                    Technologies I'm focusing on next.
+                </p>
+
+            </div>
+
+
+            <div class="learning-roadmap">
+
+                <div class="roadmap-line"></div>
+
+
+                <article class="roadmap-item roadmap-current">
+
+                    <div class="roadmap-dot"></div>
+
+                    <span class="roadmap-time">
+                        Now
+                    </span>
+
+                    <h3>Core Backend</h3>
+
+                    <p>
+                        Python, Django,
+                        FastAPI and SQL
+                    </p>
+
+                </article>
+
+
+                <article class="roadmap-item roadmap-next">
+
+                    <div class="roadmap-dot"></div>
+
+                    <span class="roadmap-time">
+                        Next
+                    </span>
+
+                    <h3>Production Data</h3>
+
+                    <p>
+                        PostgreSQL
+                        and Docker
+                    </p>
+
+                </article>
+
+
+                <article class="roadmap-item">
+
+                    <div class="roadmap-dot"></div>
+
+                    <span class="roadmap-time">
+                        Later
+                    </span>
+
+                    <h3>Advanced Django</h3>
+
+                    <p>
+                        Better patterns,
+                        testing and architecture
+                    </p>
+
+                </article>
+
+
+                <article class="roadmap-item">
+
+                    <div class="roadmap-dot"></div>
+
+                    <span class="roadmap-time">
+                        Long Term
+                    </span>
+
+                    <h3>Backend Architecture</h3>
+
+                    <p>
+                        Scalable systems
+                        and deployment
+                    </p>
+
+                </article>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- cta -->
+    <section class="ecosystem-cta-section">
+        <div class="ecosystem-container">
+
+            <div class="ecosystem-cta">
+
+                <div class="ecosystem-cta-icon">
+                    ◇
+                </div>
+
+                <div class="ecosystem-cta-copy">
+
+                    <h2>
+                        Let's build something together.
+                    </h2>
+
+                    <p>
+                        I'm always open to opportunities, collaboration
+                        and projects where I can keep learning and building.
+                    </p>
+
+                </div>
+
+                <a
+                    href="{% url 'home' %}#contact"
+                    class="ecosystem-cta-button"
+                >
+                    Get in touch
+                    <span>↗</span>
+                </a>
+
+            </div>
+
+        </div>
+    </section>
+
+</main>
+
+{% endblock %}

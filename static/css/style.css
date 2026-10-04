@@ -989,6 +989,15 @@ button {
         box-shadow 0.2s ease;
 }
 
+.social-links a svg,
+.social-links a img {
+    width: 20px;
+    height: 20px;
+    display: block;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
 .social-links a:hover {
     transform: translateY(-3px);
 
@@ -1887,29 +1896,26 @@ button {
     }
 }
 
-/* about page - current layout only */
-
 /* about page */
 
 .about-creative-page {
-    --about-bg: #f8fbff;
+    --about-bg: #fffdf9;
     --about-white: #ffffff;
-    --about-text: #172033;
-    --about-muted: #59677c;
-    --about-border: #dce6f2;
-    --about-orange: #2563eb;
-    --about-green: #238636;
-    --about-purple: #7c3aed;
+    --about-text: #202733;
+    --about-muted: #697382;
+    --about-border: #e8e1da;
+    --about-orange: #ee765f;
+    --about-green: #168b73;
 
     background:
         radial-gradient(
             circle at 8% 4%,
-            rgba(37, 99, 235, 0.08),
+            rgba(255, 219, 199, 0.28),
             transparent 24%
         ),
         radial-gradient(
             circle at 93% 23%,
-            rgba(35, 134, 54, 0.06),
+            rgba(211, 236, 255, 0.24),
             transparent 22%
         ),
         var(--about-bg);
@@ -1997,7 +2003,7 @@ button {
 
     color: var(--about-muted);
 
-    font-size: 18px;
+    font-size: 17px;
     line-height: 1.85;
 }
 
@@ -2128,7 +2134,7 @@ button {
 }
 
 .database-icon {
-    background: #eef8ff;
+    background: #eaf3ff;
     color: #3871a7;
 }
 
@@ -2341,7 +2347,7 @@ button {
     top: 250px;
     left: 3px;
 
-    background: #f2ebff;
+    background: #ffe8e2;
 }
 
 
@@ -2459,7 +2465,7 @@ button {
 
     color: var(--about-muted);
 
-    font-size: 16px;
+    font-size: 15px;
 
     line-height: 1.9;
 }
@@ -2474,7 +2480,7 @@ button {
     color: #424c58;
 
     font-family: Georgia, serif;
-    font-size: 23px;
+    font-size: 21px;
     font-style: italic;
 }
 
@@ -2517,7 +2523,7 @@ button {
 
     color: var(--about-muted);
 
-    font-size: 16px;
+    font-size: 14px;
     line-height: 1.8;
 }
 
@@ -2560,19 +2566,19 @@ button {
 }
 
 .thing-pink {
-    background: #edf4ff;
+    background: #fff0f3;
 }
 
 .thing-yellow {
-    background: #ebf8ee;
+    background: #fff5d9;
 }
 
 .thing-green {
-    background: #f3edff;
+    background: #eaf8f0;
 }
 
 .thing-blue {
-    background: #eef8ff;
+    background: #eaf3ff;
 }
 
 .thing-number {
@@ -2619,7 +2625,7 @@ button {
 
     color: #66717f;
 
-    font-size: 14px;
+    font-size: 13px;
 
     line-height: 1.75;
 }
@@ -2633,7 +2639,7 @@ button {
     border-top: 1px solid #eee6de;
     border-bottom: 1px solid #eee6de;
 
-    background: #f8fbff;
+    background: #fffaf4;
 }
 
 .about-tech-layout {
@@ -2698,7 +2704,7 @@ button {
 .about-tech-card h3 {
     margin: 18px 0 7px;
 
-    font-size: 23px;
+    font-size: 20px;
 }
 
 .about-tech-card > p {
@@ -2706,7 +2712,7 @@ button {
 
     color: var(--about-muted);
 
-    font-size: 14px;
+    font-size: 13px;
 
     line-height: 1.7;
 }
@@ -2814,7 +2820,7 @@ button {
 
     font-family: Georgia, serif;
 
-    font-size: 23px;
+    font-size: 21px;
 }
 
 .timeline-content p {
@@ -2824,7 +2830,7 @@ button {
 
     color: var(--about-muted);
 
-    font-size: 14px;
+    font-size: 13px;
 
     line-height: 1.75;
 }
@@ -2881,7 +2887,7 @@ button {
 
     color: var(--about-muted);
 
-    font-size: 16px;
+    font-size: 14px;
     line-height: 1.8;
 }
 
@@ -3012,7 +3018,7 @@ button {
 
     color: var(--about-muted);
 
-    font-size: 16px;
+    font-size: 14px;
     line-height: 1.8;
 }
 
@@ -3091,7 +3097,7 @@ button {
 
     border-radius: 50%;
 
-    background: #eaf2ff;
+    background: #fff1ec;
 
     color: var(--about-orange);
 
@@ -3165,7 +3171,7 @@ button {
 
     border-radius: 50%;
 
-    background: rgba(37, 99, 235, 0.13);
+    background: rgba(239, 118, 95, 0.13);
 }
 
 .about-final-card::after {
@@ -3190,7 +3196,7 @@ button {
 
     margin: 0;
 
-    color: #79a7ff;
+    color: #ffad9d;
 
     font-size: 10px;
     font-weight: 800;
@@ -3211,7 +3217,7 @@ button {
 }
 
 .about-final-card h2 em {
-    color: #77a7ff;
+    color: #ffb1a1;
 
     font-weight: 400;
 }
@@ -3264,7 +3270,7 @@ button {
 }
 
 .about-final-buttons a:first-child {
-    background: #238636;
+    background: #ff907a;
     color: #1e2834;
 }
 
@@ -3577,4 +3583,327 @@ button {
         animation: none !important;
     }
 
+}
+
+/* =========================================================
+   ABOUT PAGE — HOMEPAGE THEME OVERRIDES
+   Keeps the About layout while matching the homepage palette,
+   typography, cards, borders, buttons and developer aesthetic.
+   ========================================================= */
+
+.about-creative-page,
+.creative-about {
+    --about-bg: var(--background);
+    --about-white: var(--surface);
+    --about-paper: var(--surface);
+    --about-text: var(--text-primary);
+    --about-muted: var(--text-secondary);
+    --about-border: var(--border);
+    --about-orange: var(--blue);
+    --about-accent: var(--blue);
+    --about-green: var(--green);
+    --about-teal: var(--green);
+    --about-purple: #7c3aed;
+    --about-peach: var(--blue-light);
+    --about-pink: #f5f3ff;
+    --about-yellow: #f8fafc;
+    --about-blue: var(--blue-light);
+
+    color: var(--text-primary);
+    background-color: var(--background);
+    background-image:
+        linear-gradient(rgba(37, 99, 235, 0.045) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(37, 99, 235, 0.045) 1px, transparent 1px);
+    background-size: 48px 48px;
+}
+
+.about-creative-page *,
+.creative-about * {
+    box-sizing: border-box;
+}
+
+.about-creative-page h1,
+.about-creative-page h2,
+.about-creative-page h3,
+.about-creative-page h4,
+.creative-about h1,
+.creative-about h2,
+.creative-about h3,
+.creative-about h4 {
+    font-family: "Manrope", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    color: var(--text-primary);
+}
+
+.about-creative-page p,
+.creative-about p {
+    color: var(--text-secondary);
+}
+
+.about-handwritten {
+    color: var(--green-dark) !important;
+    font-family: "Manrope", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif !important;
+    font-size: 14px !important;
+    font-style: normal !important;
+    font-weight: 800 !important;
+    letter-spacing: 1.5px !important;
+    text-transform: uppercase;
+}
+
+.about-hero-text h1,
+.creative-hero-copy h1 {
+    font-family: "Manrope", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif !important;
+    font-weight: 800 !important;
+    letter-spacing: -3px;
+}
+
+.about-hero-text h1 span,
+.creative-hero-copy h1 span,
+.about-kicker,
+.about-section-label,
+.creative-label {
+    color: var(--blue) !important;
+}
+
+.about-intro strong,
+.creative-intro strong {
+    color: var(--text-primary);
+}
+
+.about-primary-btn,
+.creative-primary-btn {
+    border: 1px solid var(--blue) !important;
+    border-radius: 10px !important;
+    background: var(--blue) !important;
+    color: #fff !important;
+    box-shadow: 0 8px 22px rgba(37, 99, 235, 0.18) !important;
+}
+
+.about-primary-btn:hover,
+.creative-primary-btn:hover {
+    background: var(--blue-dark) !important;
+    border-color: var(--blue-dark) !important;
+    transform: translateY(-2px);
+}
+
+.about-secondary-btn,
+.creative-secondary-btn {
+    border: 1px solid var(--border) !important;
+    border-radius: 10px !important;
+    background: var(--surface) !important;
+    color: var(--text-primary) !important;
+}
+
+.about-secondary-btn:hover,
+.creative-secondary-btn:hover {
+    border-color: #b7dfc3 !important;
+    background: #f0fff4 !important;
+    color: var(--green-dark) !important;
+    transform: translateY(-2px);
+}
+
+.about-creative-page .about-tech-badges span,
+.creative-about .creative-mini-stack > div,
+.creative-about .focus-tags span {
+    border-color: var(--border) !important;
+    background: rgba(255,255,255,.88) !important;
+    color: #425269 !important;
+    box-shadow: none !important;
+}
+
+.about-photo-card,
+.about-polaroid,
+.creative-polaroid,
+.story-photo,
+.story-photo-wrap {
+    border-color: var(--border) !important;
+}
+
+.about-polaroid,
+.creative-polaroid,
+.story-photo {
+    background: var(--surface) !important;
+    box-shadow: var(--shadow) !important;
+}
+
+.about-image-frame,
+.creative-photo-frame {
+    background: linear-gradient(135deg, var(--blue), var(--green)) !important;
+}
+
+.about-location,
+.creative-location,
+.about-photo-note,
+.story-note {
+    border: 1px solid var(--border) !important;
+    border-radius: 10px !important;
+    background: var(--surface) !important;
+    color: #475569 !important;
+    box-shadow: var(--shadow) !important;
+}
+
+.about-section-label,
+.creative-label {
+    font-family: "Manrope", sans-serif !important;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 1.6px;
+}
+
+.about-section-number,
+.creative-section-number {
+    color: #94a3b8 !important;
+    font-family: "JetBrains Mono", Consolas, monospace !important;
+}
+
+.about-creative-page section,
+.creative-about section {
+    border-color: var(--border);
+}
+
+.about-story-section,
+.about-journey-section,
+.about-learning-section,
+.creative-story-section,
+.creative-journey-section,
+.creative-learning-section {
+    background: rgba(255, 255, 255, 0.58) !important;
+    border-top: 1px solid var(--border) !important;
+    border-bottom: 1px solid var(--border) !important;
+}
+
+.about-build-card,
+.about-project-card,
+.about-focus-card,
+.about-learning-card,
+.about-fact-card,
+.creative-build-card,
+.creative-project-card,
+.creative-focus-card,
+.creative-learning-card,
+.creative-fact-card,
+.creative-learning-box,
+.beyond-card {
+    border: 1px solid var(--border) !important;
+    border-radius: 15px !important;
+    background: rgba(255, 255, 255, 0.92) !important;
+    color: var(--text-primary) !important;
+    box-shadow: 0 10px 30px rgba(30, 60, 100, 0.05) !important;
+}
+
+.about-build-card:hover,
+.about-project-card:hover,
+.about-focus-card:hover,
+.about-learning-card:hover,
+.about-fact-card:hover,
+.creative-build-card:hover,
+.creative-project-card:hover,
+.creative-focus-card:hover,
+.creative-learning-card:hover,
+.creative-fact-card:hover,
+.beyond-card:hover {
+    transform: translateY(-4px);
+    border-color: #b8d9ff !important;
+    box-shadow: 0 18px 45px rgba(30, 60, 100, 0.09) !important;
+}
+
+.about-build-icon,
+.creative-build-icon,
+.timeline-marker {
+    background: var(--blue-light) !important;
+    color: var(--blue) !important;
+    border-color: #cfe0ff !important;
+}
+
+.about-timeline::before,
+.creative-timeline::before {
+    background: var(--border) !important;
+}
+
+.about-timeline-item:hover .timeline-marker,
+.creative-timeline-item:hover .timeline-marker {
+    background: #eaf8ef !important;
+    color: var(--green-dark) !important;
+    border-color: #b7dfc3 !important;
+}
+
+.about-tag,
+.creative-tag,
+.about-tech-tag,
+.creative-tech-tag {
+    border: 1px solid #dbe4ee !important;
+    border-radius: 7px !important;
+    background: rgba(255,255,255,.9) !important;
+    color: #425269 !important;
+}
+
+.about-tag:hover,
+.creative-tag:hover,
+.about-tech-tag:hover,
+.creative-tech-tag:hover {
+    border-color: #bcd2ff !important;
+    background: var(--blue-light) !important;
+    color: var(--blue-dark) !important;
+}
+
+.about-goal-card,
+.creative-goal-card,
+.about-cta-card,
+.creative-cta-card {
+    border: 1px solid #cfe0ff !important;
+    border-radius: 20px !important;
+    background:
+        radial-gradient(circle at 10% 10%, rgba(37,99,235,.08), transparent 30%),
+        radial-gradient(circle at 90% 80%, rgba(45,164,78,.08), transparent 30%),
+        #fff !important;
+    box-shadow: var(--shadow) !important;
+}
+
+.about-goal-card::before,
+.creative-goal-card::before,
+.about-cta-card::before,
+.creative-cta-card::before {
+    background: linear-gradient(90deg, var(--blue), var(--green)) !important;
+}
+
+.about-status,
+.creative-status,
+.status-dot-text {
+    color: var(--green-dark) !important;
+}
+
+.about-status-dot,
+.creative-status-dot {
+    background: var(--green) !important;
+    box-shadow: 0 0 0 5px rgba(45,164,78,.1) !important;
+}
+
+.about-creative-page a:focus-visible,
+.creative-about a:focus-visible {
+    outline: 3px solid rgba(37,99,235,.25);
+    outline-offset: 3px;
+}
+
+@media (max-width: 768px) {
+    .about-creative-page,
+    .creative-about {
+        background-size: 36px 36px;
+    }
+
+    .about-hero-text h1,
+    .creative-hero-copy h1 {
+        letter-spacing: -2px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .about-creative-page *,
+    .about-creative-page *::before,
+    .about-creative-page *::after,
+    .creative-about *,
+    .creative-about *::before,
+    .creative-about *::after {
+        animation: none !important;
+        transition: none !important;
+        scroll-behavior: auto !important;
+    }
 }
